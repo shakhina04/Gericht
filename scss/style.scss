@@ -1,0 +1,1252 @@
+$color-yellow: #DCCA87;
+$color-white: #FFFFFF;
+$color-grey: #AAAAAA;
+$color-black: #0C0C0C;
+$fs_16: 16px;
+$flex: flex;
+$space-b: space-between;
+$align: center;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background: $color-black;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #DCCA87;
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #0C0C0C;
+    display: flex;
+    justify-content: $align;
+    align-items: $align;
+}
+
+button:hover {
+    background-color: #f2bf05;
+}
+
+// section
+.header {
+    // margin: 30px 0;
+    display: $flex;
+    align-items: $align;
+    justify-content: $space-b;
+    margin: 0 10px;
+    // gap: 100px;
+    // position: fixed;
+    // top: 0;
+    // z-index: 999;
+
+    a {
+        text-decoration: none;
+        color: $color-white;
+    }
+
+    .middle_header {
+        display: $flex;
+        gap: 30px;
+    }
+
+    .right_header {
+        display: $flex;
+        align-items: $align;
+        gap: 10px;
+    }
+
+    .logo_header {
+
+        a {
+            font-family: 'Cormorant Upright';
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 44px;
+        }
+    }
+
+    a:hover,
+    .page_promo a:hover {
+        color: wheat;
+    }
+
+    a:active,
+    .page_promo a:active {
+        color: cornsilk;
+    }
+}
+
+.tag_promo {
+    display: $flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 100px;
+    height: 0;
+
+    a {
+        display: inline-flex;
+        transform: rotate(-90deg);
+        text-decoration: none;
+        color: azure;
+        width: 30px;
+
+    }
+
+    a:hover {
+        color: $color-yellow;
+    }
+}
+
+.promo {
+    background-color: #1a1918;
+
+    .pic_box {
+        // display: $flex;
+        // justify-content: $align;
+        // align-items: $align;
+
+        width: 450px;
+        height: 600px;
+        border: 2px solid $color-yellow;
+        margin: 20px auto;
+        overflow: hidden;
+
+
+        .pic_mini {
+            width: 1359px;
+            height: 634px;
+            display: flex;
+            background: red;
+            position: relative;
+            left: 0;
+            transition: all ease 1s;
+        }
+    }
+
+    h1 {
+        font-family: 'Cormorant Upright';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 100px;
+        color: $color-white;
+        position: relative;
+        display: flex;
+        justify-content: $align;
+        align-items: $align;
+        margin-top: -400px;
+        letter-spacing: 10px;
+    }
+
+    .page_promo {
+
+        font-family: 'Cormorant Upright';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 10px;
+        padding-bottom: 50px;
+
+        margin-top: 340px;
+
+        .page1,
+        .page2,
+        .page3 {
+            // display: inline-flex;
+            // justify-content: flex-end;
+            // align-items: end;
+            // text-align: center;
+            text-decoration: none;
+            color: #FFFFFF;
+            gap: 50px;
+            background-color: none;
+        }
+    }
+
+    // .swiper {
+    //     // width: 1359px;
+    //     // height: 600px;
+
+    //     .swiper-slide {
+    //         text-align: center;
+    //         font-size: 18px;
+    //         // background-color: aliceblue;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+
+    //         img {
+    //             // width: 58%;  
+    //             // object-fit: cover;
+    //             width: 450px;
+    //             height: 600px;
+    //         }
+    //     }
+
+    //     .swiper-button-next,
+    //     .swiper-rtl .swiper-button-prev {
+    //         right: 140px !important;
+    //         left: auto;
+    //     }
+
+    //     .swiper-button-prev,
+    //     .swiper-rtl .swiper-button-next {
+    //         left: 140px !important;
+    //         right: auto;
+    //     }
+
+    // }
+}
+
+.reservation {
+
+    .logo_reservation {
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            padding: 50px 0;
+        }
+    }
+
+    .reservation_box {
+        height: 466px;
+        // width: 1000px;
+        margin: 50px 100px;
+        border: 1px solid rgba(220, 202, 135, 0.2);
+        color: #FFFFFF;
+
+        .btn_reservation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 10px 30px;
+        }
+    }
+
+    .reservation_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h6 {
+            padding-top: 50px;
+            padding-bottom: 10px;
+            font-family: 'Cormorant Upright';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 23px;
+        }
+
+        h4 {
+            font-family: 'Cormorant Upright';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            text-align: center;
+            color: #DCCA87;
+        }
+
+        img {
+            padding-bottom: 10px;
+        }
+
+    }
+
+    .reservation_input {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        gap: 30px;
+        margin-top: 50px;
+
+        select {
+            background: #0C0C0C;
+            color: aliceblue;
+            border: 1px solid #DCCA87;
+            width: 200px;
+            height: 35px;
+            font-size: normal;
+            font-family: 'Cormorant Upright';
+        }
+
+        option {
+            color: aliceblue;
+            background: black;
+            font-family: 'Cormorant Upright';
+        }
+
+        input {
+            background: #0C0C0C;
+            color: aliceblue;
+            width: 200px;
+            height: 35px;
+            border: 1px solid #DCCA87;
+        }
+
+        select:hover,
+        input:hover {
+            background-color: #DCCA87;
+        }
+    }
+
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+
+    .modal__box {
+        position: relative;
+        max-width: 500px;
+        padding: 45px;
+        z-index: 1;
+        margin: 30px 15px;
+        color: $color-white;
+        background-color: $color-black;
+        border: 2px solid $color-yellow;
+        box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+        transform: scale(0);
+        transition: transform .8s;
+        color: $color-white;
+
+        .modal__close-btn {
+            top: 8px;
+            right: 8px;
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            padding: 5px;
+            cursor: pointer;
+
+        }
+
+        .modal__close-btn:hover {
+            background-color: #DCCA87;
+            transition: .4s;
+
+        }
+
+        .modal__close-btn:active {
+            background-color: #ffc905;
+            transition: .4s;
+
+        }
+
+        .modal-line {
+            background: #0C0C0C;
+            color: aliceblue;
+            border: 1px solid #DCCA87;
+            width: 300px;
+            height: 40px;
+            font-size: normal;
+            font-family: "Cormorant Upright";
+            margin-bottom: 18px;
+        }
+
+        #registration {
+            color: $color-yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .register {
+            padding: 10px 30px;
+            display: flex;
+            margin: 0 auto;
+            justify-content: $align;
+            align-items: $align;
+
+        }
+
+    }
+
+    &.open {
+        visibility: visible;
+        opacity: 1;
+
+        .modal__box {
+            transform: scale(1);
+        }
+
+
+
+    }
+}
+
+.about_us {
+    background: url(../img/bg_promo.png) no-repeat center / cover;
+    // height: 160vh;
+    // padding-bottom: 50px;
+
+    .logo_about_us {
+        display: flex;
+        justify-content: flex-start;
+        // padding-bottom: 80px;
+
+    }
+
+    .about_us_box {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 100px;
+        padding: 0 50px;
+
+        // .drink_left {
+        //     // padding: 0 40px;
+        // }
+
+        .about_us_minibox {
+
+
+            .ab_us_text {
+
+                h3 {
+                    font-family: 'Cormorant Upright';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 23px;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    padding: 12px 0 10px 0;
+                }
+
+                h2 {
+                    font-family: 'Cormorant Upright';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 64px;
+                    text-transform: capitalize;
+                    color: #DCCA87;
+                    padding-bottom: 30px;
+                }
+
+                p {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    width: 523px;
+                    color: #AAAAAA;
+                }
+
+                .btn_ab_us {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 50px;
+                    padding: 10px 30px;
+                }
+
+            }
+
+        }
+    }
+}
+
+
+.poison {
+    // height: 150vh;
+    padding-bottom: 100px;
+
+    .poison_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+
+        h6 {
+            font-family: 'Cormorant Upright';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 23px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            padding: 10px 0;
+        }
+
+        h5 {
+            font-family: 'Cormorant Upright';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #DCCA87;
+            padding-bottom: 50px;
+        }
+    }
+
+    .poison_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+
+        img {
+            border: 1px solid #DCCA87;
+            object-fit: cover;
+        }
+
+        .poison_item {
+            display: flex;
+            position: relative;
+            cursor: pointer;
+
+            .poison_drinks {
+                position: absolute;
+                font-family: 'Cormorant Upright';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 45px;
+                text-align: center;
+                left: 130px;
+                top: 210px;
+                color: #FFFFFF;
+                display: block;
+                transform: translateY(30px);
+                transition: transform .4s ease;
+
+
+            }
+
+        }
+
+
+    }
+
+    .poison_item:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(220, 202, 135, 0.2);
+        opacity: 0;
+        transition: all 0.4s ease;
+        content: ' ';
+    }
+
+    .poison_item:hover:before {
+        opacity: 1;
+    }
+
+    .poison_item:hover .poison_drinks {
+        transform: translateY(0);
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+
+
+.happy_hours {
+    background: url(../img/happy_hours.jpg) no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .happy_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-family: 'Cormorant Upright';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+
+    h3 {
+        font-family: 'Cormorant Upright';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 128px;
+        color: #DCCA87;
+        padding-bottom: 30px;
+    }
+}
+
+
+
+
+.menu {
+    // height: 200vh;
+
+    .logo_reservation {
+
+        img {
+            padding-top: 50px;
+        }
+    }
+
+    .menu_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h6 {
+            font-family: 'Cormorant Upright';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 23px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            // padding-bottom: 10px;
+        }
+
+        h4 {
+            font-family: 'Cormorant Upright';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #DCCA87;
+            // padding-top: 10px;
+            // padding-bottom: 50px;
+        }
+    }
+
+    .menu_box {
+
+        .inner_menu_box {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+
+            .menu_left {
+
+                .wine_div {
+                    display: flex;
+                    padding-bottom: 50px;
+
+                    .wine {
+                        font-family: 'Cormorant Upright';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 45px;
+                        text-align: center;
+                        text-transform: capitalize;
+                        color: #FFFFFF;
+
+                    }
+                }
+
+                .menu_item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    text-align: center;
+
+                    .one {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: space-between;
+                        gap: 10px 30px;
+
+                        img {
+                            width: 100px;
+                            height: 2px;
+                        }
+
+                        h2 {
+                            padding-bottom: 10px;
+                        }
+
+                        a {
+                            color: $color-yellow;
+                            text-decoration: none;
+                        }
+
+                    }
+
+                    h3 {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-align: center;
+                        color: #AAAAAA;
+                        padding-bottom: 40px;
+                    }
+
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        color: $color-white;
+                    }
+                }
+            }
+
+
+
+            .menu_right {
+
+                .wine_div {
+                    display: flex;
+                    padding-bottom: 50px;
+
+                    .wine {
+                        font-family: 'Cormorant Upright';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 45px;
+                        text-align: center;
+                        text-transform: capitalize;
+                        color: #FFFFFF;
+
+                    }
+                }
+
+                .menu_item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    text-align: center;
+
+                    .one {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: space-between;
+                        gap: 10px 30px;
+
+                        img {
+                            width: 100px;
+                            height: 2px;
+                        }
+
+                        h2 {
+                            padding-bottom: 10px;
+                        }
+
+                        a {
+                            color: $color-yellow;
+                            text-decoration: none;
+                        }
+
+                    }
+
+                    h3 {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-align: center;
+                        color: #AAAAAA;
+                        padding-bottom: 40px;
+                    }
+
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        color: $color-white;
+                    }
+                }
+
+            }
+
+
+        }
+
+
+
+        .btn_reservation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 10px 30px;
+
+        }
+    }
+
+    .menu_logo {
+        padding-top: 50px;
+    }
+}
+
+
+
+
+.find_us {
+    background: url(../img/bg_black.png) no-repeat center / cover;
+    // height: 130vh;
+    padding-bottom: 100px;
+
+    .find_us_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // padding-top: 100px;
+        gap: 100px;
+
+        .find_us_text {
+
+            h2 {
+                font-family: 'Cormorant Upright';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 23px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+            }
+
+            h3 {
+                font-family: 'Cormorant Upright';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 64px;
+                text-transform: capitalize;
+                color: #DCCA87;
+                padding-bottom: 50px;
+            }
+
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #AAAAAA;
+                padding-bottom: 50px;
+            }
+
+            h4 {
+                font-family: 'Cormorant Upright';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 23px;
+                text-transform: capitalize;
+                color: #DCCA87;
+                padding-bottom: 15px;
+            }
+
+            h5 {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #FFFFFF;
+                padding-bottom: 15px;
+            }
+
+            .btn_find_us {
+                margin-top: 50px;
+                padding: 10px 30px;
+            }
+        }
+
+        .find_us_image {
+            position: relative;
+
+            img {
+                position: relative;
+
+            }
+
+            .box-1 {
+                width: 220px;
+                height: 220px;
+                background-color: #DCCA87;
+                position: absolute;
+                bottom: 10px;
+                left: 0px;
+                transition: .4s ease;
+            }
+
+            .box-2 {
+                width: 220px;
+                height: 220px;
+                background-color: #DCCA87;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                transition: .4s ease;
+            }
+        }
+
+        .find_us_image:hover .box-1 {
+            bottom: -10px;
+            left: -20px;
+        }
+
+        .find_us_image:hover .box-2 {
+            top: -20px;
+            right: -20px;
+        }
+    }
+}
+
+
+
+
+.newsletter {
+    // height: 100vh;
+    // display: flex;
+    padding: 100px 0;
+
+
+    .logo_newsletter {
+        // display: flex;
+        // justify-content: flex-end;
+        // margin-right: -221px; 
+    }
+
+    .newsletter_box {
+        height: 350px;
+        // width: 1000px;
+        margin: 50px 100px;
+        padding: 35px 0;
+        border: 1px solid rgba(220, 202, 135, 0.2);
+
+
+        .subscribe {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h6 {
+                font-family: 'Cormorant Upright';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 23px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                padding-bottom: 10px;
+            }
+
+            img {
+                padding-bottom: 10px;
+
+            }
+
+            h4 {
+                font-family: 'Cormorant Upright';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 64px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #DCCA87;
+                padding-bottom: 25px;
+            }
+
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            gap: 30px;
+
+            input {
+                width: 500px;
+                height: 40px;
+            }
+
+            .subscribe_btn {
+                font-family: 'Cormorant Upright';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                color: #0C0C0C;
+                padding: 10px 30px;
+
+            }
+        }
+    }
+
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        // padding-top: 100px;
+        text-align: center;
+
+        .scroll_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-right: 5px;
+        }
+    }
+
+}
+
+
+
+
+footer {
+    // height: 80vh;
+
+    .footer_box {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 100px;
+        padding-top: 80px;
+
+        .footer_item_left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .numbers {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #AAAAAA;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .footer_item_middle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .footer_logo {
+                padding-bottom: 10px;
+
+                a {
+                    font-family: 'Cormorant Upright';
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 44px;
+                    padding-bottom: 50px;
+                    text-decoration: none;
+                    color: $color-white;
+
+                }
+
+                a:hover {
+                    color: wheat;
+                }
+
+                a:active {
+                    color: cornsilk;
+                }
+            }
+
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                color: #FFFFFF;
+                padding-bottom: 30px;
+            }
+
+            .footer_middle_logo {
+                display: flex;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                padding: 20px 0;
+            }
+        }
+
+        .footer_item_right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+
+                font-family: 'Cormorant Upright';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                text-transform: capitalize;
+                color: #F5EFDB;
+                padding-top: -55px;
+            }
+
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                color: #AAAAAA;
+                padding: 10px;
+            }
+
+        }
+    }
+
+    .last {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #AAAAAA;
+    }
+}
+
+
+
+
+
+//MEDIA
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 0 50px;
+    }
+
+    .reservation {
+
+        .logo_reservation {
+
+            img {
+                padding: 50px;
+            }
+        }
+    }
+
+    .about_us {
+
+        .logo_about_us {
+
+            img {
+                padding: 0 30px;
+
+            }
+        }
+    }
+
+    .poison {
+        .poison_box {
+            padding: 0 30px;
+        }
+    }
+
+    .menu {
+        .menu_box {
+            .inner_menu_box {
+                padding: 0 70px;
+            }
+        }
+        .logo_reservation {
+            img {
+                padding:  30px;
+            }
+        }
+        .menu_logo {
+            img {
+                padding: 10px 70px;
+            }
+        }
+    }
+
+    .find_us {
+        .find_us_box {
+            padding: 0 50px;
+        }
+    }
+
+    footer {
+        .footer_box {
+            padding: 0 70px;
+        }
+    }
+}
+
+@media (max-width:950px) {
+    .poison {
+
+        .poison_box {
+            gap: 10px;
+        }
+    }
+}
